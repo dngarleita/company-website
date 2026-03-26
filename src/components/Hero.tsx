@@ -68,7 +68,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              From PHP/Symfony backends to cloud automation and AI-powered workflows,
+              From backend services and APIs to cloud automation and AI-powered workflows,
               we deliver production-ready systems that solve real business problems.
             </motion.p>
 

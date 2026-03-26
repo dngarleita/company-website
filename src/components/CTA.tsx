@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const serviceOptions = [
-  'Software Engineering (PHP/Symfony & TypeScript)',
+  'Software Engineering',
   'Cloud & DevOps Modernization',
   'Enterprise AI Integration',
   'Multiple / Not sure yet',

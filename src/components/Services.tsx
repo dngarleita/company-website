@@ -8,9 +8,9 @@ const services = [
       </svg>
     ),
     title: 'Software Engineering',
-    subtitle: 'PHP/Symfony & TypeScript',
+    subtitle: 'Web Applications & Backend Services',
     description:
-      'We design, build, and modernize business-critical web applications. Clean architectures, tested code, smooth integrations.',
+      'We design, build, and modernize business-critical web applications. Clean architectures, tested code, and smooth integrations with the systems you already run.',
     outcomes: [
       'Well-structured backend services with clear module boundaries',
       'Codebases new developers can onboard to in days, not weeks',
