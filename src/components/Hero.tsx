@@ -11,18 +11,10 @@ const teamImages = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-neutral-950">
-      {/* Animated background */}
+      {/* Animated background - CSS animations for GPU compositing */}
       <div className="absolute inset-0">
-        <motion.div
-          className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary-500/15 rounded-full blur-[120px]"
-          animate={{ x: [0, 60, 0], y: [0, -40, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-primary-400/10 rounded-full blur-[100px]"
-          animate={{ x: [0, -50, 0], y: [0, 50, 0] }}
-          transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-        />
+        <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary-500/15 rounded-full blur-[120px] animate-[orb-drift-1_10s_ease-in-out_infinite]" />
+        <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-primary-400/10 rounded-full blur-[100px] animate-[orb-drift-2_12s_ease-in-out_infinite]" />
         <div
           className="absolute inset-0 opacity-[0.02]"
           style={{
@@ -126,14 +118,9 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            {/* Floating cards */}
             <div className="relative w-full h-[500px]">
               {/* Main card */}
-              <motion.div
-                className="absolute top-8 left-4 right-4 bg-neutral-900/80 backdrop-blur border border-neutral-800 rounded-2xl p-6 shadow-2xl"
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              >
+              <div className="absolute top-8 left-4 right-4 bg-neutral-900/80 backdrop-blur border border-neutral-800 rounded-2xl p-6 shadow-2xl animate-[float-up_5s_ease-in-out_infinite]">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-3 h-3 rounded-full bg-red-500/80" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
@@ -146,25 +133,17 @@ export default function Hero() {
                   <p className="pl-4"><span className="text-neutral-500">environment:</span> <span className="text-primary-300">live</span></p>
                   <p className="pl-4"><span className="text-neutral-500">status:</span> <span className="text-green-400">&#10003; passing</span></p>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Stats card */}
-              <motion.div
-                className="absolute bottom-16 left-0 bg-neutral-900/80 backdrop-blur border border-neutral-800 rounded-xl p-5 shadow-2xl w-56"
-                animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-              >
+              <div className="absolute bottom-16 left-0 bg-neutral-900/80 backdrop-blur border border-neutral-800 rounded-xl p-5 shadow-2xl w-56 animate-[float-down_4s_ease-in-out_1s_infinite]">
                 <p className="text-xs text-neutral-500 uppercase tracking-wider mb-2">Deployment Frequency</p>
                 <p className="text-2xl font-bold text-white">12x</p>
                 <p className="text-sm text-primary-400">faster releases</p>
-              </motion.div>
+              </div>
 
               {/* Notification card */}
-              <motion.div
-                className="absolute bottom-8 right-0 bg-neutral-900/80 backdrop-blur border border-primary-800/30 rounded-xl p-4 shadow-2xl w-64"
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-              >
+              <div className="absolute bottom-8 right-0 bg-neutral-900/80 backdrop-blur border border-primary-800/30 rounded-xl p-4 shadow-2xl w-64 animate-[float-up_6s_ease-in-out_2s_infinite]">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-primary-500/20 flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-4 h-4 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,22 +155,18 @@ export default function Hero() {
                     <p className="text-xs text-neutral-500 mt-0.5">All 47 tests passing, deployed to prod</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-[float-down_2s_ease-in-out_infinite]">
         <svg className="w-5 h-5 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
-      </motion.div>
+      </div>
     </section>
   )
 }
