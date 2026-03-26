@@ -47,7 +47,7 @@ export default function TechStack() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Technologies we work with
+          Technologies we are experts in
         </motion.p>
       </div>
 
