@@ -1,0 +1,51 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020617"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%" r="35%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow effects -->
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Dot grid pattern -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.04)"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Logo square -->
+  <rect x="80" y="80" width="56" height="56" rx="12" fill="#16a34a"/>
+  <text x="108" y="118" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="white" text-anchor="middle" dominant-baseline="central">M</text>
+
+  <!-- Company name -->
+  <text x="152" y="116" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="white">Megatherium</text>
+
+  <!-- Main heading -->
+  <text x="80" y="260" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="700" fill="white">We build software</text>
+  <text x="80" y="340" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="700" fill="white">your team will</text>
+  <text x="80" y="420" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="700" fill="url(#green)">actually maintain</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="490" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#94a3b8">Software Engineering  ·  Cloud &amp; DevOps  ·  AI Integration</text>
+
+  <!-- URL -->
+  <text x="80" y="570" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#4ade80">megatherium.eu</text>
+</svg>
