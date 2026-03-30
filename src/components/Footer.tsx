@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-8 text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm">
             <a href="#services" className="text-neutral-500 hover:text-primary-400 transition-colors">
               Services
             </a>

@@ -89,18 +89,18 @@ export default function Hero() {
 
             {/* Social proof strip */}
             <motion.div
-              className="mt-12 flex items-center gap-4"
+              className="mt-12 flex flex-wrap items-center gap-3 sm:gap-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <div className="flex -space-x-3">
+              <div className="flex -space-x-3 shrink-0">
                 {teamImages.map((src, i) => (
                   <img
                     key={i}
                     src={src}
                     alt=""
-                    className="w-10 h-10 rounded-full border-2 border-neutral-950 object-cover"
+                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-neutral-950 object-cover"
                   />
                 ))}
               </div>

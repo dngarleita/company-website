@@ -89,7 +89,7 @@ export default function CTA() {
                 ))}
               </div>
               <p className="text-sm text-neutral-500">
-                Typically respond within <span className="text-neutral-300">4 hours</span>
+                Typically respond within <span className="text-neutral-300">one day</span>
               </p>
             </div>
           </motion.div>

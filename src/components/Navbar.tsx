@@ -117,7 +117,12 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setMobileOpen(false)
+                    const el = document.querySelector(link.href)
+                    if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
+                  }}
                   className={`font-medium transition-colors ${
                     activeSection === link.href.slice(1)
                       ? 'text-primary-400'
@@ -129,7 +134,12 @@ export default function Navbar() {
               ))}
               <a
                 href="#contact"
-                onClick={() => setMobileOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault()
+                  setMobileOpen(false)
+                  const el = document.querySelector('#contact')
+                  if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
+                }}
                 className="bg-primary-600 text-white px-5 py-2.5 rounded-lg font-semibold text-center"
               >
                 Request a Quote
