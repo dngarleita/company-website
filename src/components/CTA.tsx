@@ -48,12 +48,13 @@ export default function CTA() {
               Get Started
             </span>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-              Let's build something
+              Bring us the part of your stack
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300"> your team will own</span>
             </h2>
-            <p className="mt-5 text-neutral-400 text-lg leading-relaxed">
-              Tell us about your project and we'll respond within one business day
-              with a tailored proposal. No obligations, no spam.
+            <p className="mt-5 text-neutral-300 text-lg leading-relaxed">
+              Tell us where delivery is stuck: legacy systems, fragile releases, integration
+              work, or an AI workflow that needs proper controls. We will respond with a
+              practical next step, not a generic sales sequence.
             </p>
 
             <div className="mt-10 space-y-5">
@@ -73,7 +74,7 @@ export default function CTA() {
                   <span className="w-10 h-10 rounded-lg bg-primary-500/10 text-primary-400 flex items-center justify-center text-sm font-bold shrink-0">
                     {step.icon}
                   </span>
-                  <p className="text-neutral-300">{step.text}</p>
+                  <p className="text-neutral-200">{step.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -88,7 +89,7 @@ export default function CTA() {
                   <img key={i} src={src} alt="" className="w-8 h-8 rounded-full border-2 border-neutral-950 object-cover" />
                 ))}
               </div>
-              <p className="text-sm text-neutral-500">
+              <p className="text-sm text-neutral-400">
                 Typically respond within <span className="text-neutral-300">one day</span>
               </p>
             </div>

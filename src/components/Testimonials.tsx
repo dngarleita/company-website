@@ -41,6 +41,10 @@ export default function Testimonials() {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white tracking-tight">
             Trusted by engineering leaders
           </h2>
+          <p className="mt-4 text-neutral-300 text-lg">
+            Placeholder testimonials for now, but this section should eventually be backed by
+            named clients, case studies, or approved anonymized quotes with specific outcomes.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6">

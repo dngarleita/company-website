@@ -56,9 +56,9 @@ export default function HowWeWork() {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white tracking-tight">
             Two ways to work with us
           </h2>
-          <p className="mt-4 text-neutral-400 text-lg">
-            Every service we offer is available as a full project engagement
-            or through individual expert placement. Choose what fits your situation.
+          <p className="mt-4 text-neutral-300 text-lg">
+            Some clients need an accountable delivery partner. Others need senior operators
+            embedded inside their team. We support both without forcing a one-size-fits-all model.
           </p>
         </motion.div>
 
@@ -111,7 +111,7 @@ export default function HowWeWork() {
 
         {/* Bottom note */}
         <motion.p
-          className="text-center text-neutral-500 text-sm mt-10 max-w-2xl mx-auto"
+          className="text-center text-neutral-400 text-sm mt-10 max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

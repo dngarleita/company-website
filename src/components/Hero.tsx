@@ -55,13 +55,14 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="mt-6 text-lg text-neutral-400 max-w-lg leading-relaxed"
+              className="mt-6 text-lg text-neutral-300 max-w-xl leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              From backend services and APIs to cloud automation and AI-powered workflows,
-              we deliver production-ready systems that solve real business problems.
+              We modernize internal platforms, backend systems, and delivery workflows for
+              teams that are tired of brittle handovers, risky releases, and software nobody
+              wants to maintain.
             </motion.p>
 
             <motion.div
@@ -105,8 +106,8 @@ export default function Hero() {
                 ))}
               </div>
               <div className="text-sm">
-                <p className="text-white font-medium">Trusted by engineering teams</p>
-                <p className="text-neutral-500">across Europe</p>
+                <p className="text-white font-medium">Built for engineering leaders</p>
+                <p className="text-neutral-400">who need speed without cleanup debt later</p>
               </div>
             </motion.div>
           </div>

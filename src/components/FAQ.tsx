@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
@@ -36,12 +36,16 @@ const faqs = [
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false)
+  const answerId = useId()
 
   return (
     <div className="border-b border-neutral-800">
       <button
+        type="button"
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-5 text-left group"
+        aria-expanded={open}
+        aria-controls={answerId}
       >
         <span className="text-white font-medium pr-8 group-hover:text-primary-400 transition-colors">
           {question}
@@ -60,6 +64,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       <AnimatePresence>
         {open && (
           <motion.div
+            id={answerId}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -93,6 +98,10 @@ export default function FAQ() {
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white tracking-tight">
             Common questions
           </h2>
+          <p className="mt-4 text-neutral-300 text-lg">
+            The questions below address the concerns most teams raise before bringing in an
+            outside delivery partner: fit, speed, handover, and pricing clarity.
+          </p>
         </motion.div>
 
         <motion.div
@@ -113,7 +122,7 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p className="text-neutral-500 text-sm">
+          <p className="text-neutral-400 text-sm">
             Still have questions?{' '}
             <a href="#contact" className="text-primary-400 hover:text-primary-300 font-medium transition-colors">
               Get in touch

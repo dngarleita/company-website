@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TechStack from './components/TechStack'
 import Services from './components/Services'
+import CaseStudies from './components/CaseStudies'
 import HowWeWork from './components/HowWeWork'
 import WhyUs from './components/WhyUs'
 import Testimonials from './components/Testimonials'
@@ -16,6 +17,7 @@ export default function App() {
       <Hero />
       <TechStack />
       <Services />
+      <CaseStudies />
       <HowWeWork />
       <WhyUs />
       <Testimonials />

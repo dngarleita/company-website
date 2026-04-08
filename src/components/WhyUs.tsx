@@ -110,9 +110,9 @@ export default function WhyUs() {
             <span className="text-primary-400 font-semibold text-sm tracking-wide uppercase">
               Why Megatherium
             </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white tracking-tight">
-              Built for teams that need to move fast, without cutting corners
-            </h2>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Built for teams that need delivery discipline, not extra noise
+          </h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
