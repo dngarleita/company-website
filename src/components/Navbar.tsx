@@ -52,7 +52,7 @@ export default function Navbar() {
             <span className="text-white font-bold text-base">M</span>
           </div>
           <span className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">
-            Megatherium
+            Megatherium GmbH
           </span>
         </a>
 

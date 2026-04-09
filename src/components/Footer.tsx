@@ -5,11 +5,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-md bg-primary-600 flex items-center justify-center">
-              <span className="text-white font-bold text-xs">M</span>
-            </div>
-            <span className="text-lg font-bold text-white">Megatherium</span>
+          <div className="w-7 h-7 rounded-md bg-primary-600 flex items-center justify-center">
+            <span className="text-white font-bold text-xs">M</span>
           </div>
+          <span className="text-lg font-bold text-white">Megatherium GmbH</span>
+        </div>
 
           {/* Links */}
           <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm">
@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-neutral-600 text-sm">
-            &copy; {new Date().getFullYear()} Megatherium. All rights reserved.
+            &copy; {new Date().getFullYear()} Megatherium GmbH. All rights reserved.
           </p>
         </div>
       </div>

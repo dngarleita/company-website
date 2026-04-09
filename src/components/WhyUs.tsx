@@ -108,7 +108,7 @@ export default function WhyUs() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-primary-400 font-semibold text-sm tracking-wide uppercase">
-              Why Megatherium
+              Why Megatherium GmbH
             </span>
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white tracking-tight">
             Built for teams that need delivery discipline, not extra noise

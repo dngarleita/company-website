@@ -149,7 +149,7 @@ export default function Services() {
                     />
                     <div>
                       <p className="text-white font-semibold">{service.title} Lead</p>
-                      <p className="text-neutral-500 text-sm">Megatherium</p>
+                      <p className="text-neutral-500 text-sm">Megatherium GmbH</p>
                     </div>
                   </div>
                   <div className="px-6 pb-6">

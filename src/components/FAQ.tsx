@@ -43,7 +43,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between py-5 text-left group"
+        className="w-full flex items-center justify-between py-5 text-left group cursor-pointer"
         aria-expanded={open}
         aria-controls={answerId}
       >

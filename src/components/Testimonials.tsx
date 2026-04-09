@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const testimonials = [
   {
     quote:
-      'Megatherium took our fragmented legacy PHP system and turned it into something our team actually enjoys working on. The architecture is clean, the tests pass, and onboarding new developers went from three weeks to three days.',
+      'Megatherium GmbH took our fragmented legacy PHP system and turned it into something our team actually enjoys working on. The architecture is clean, the tests pass, and onboarding new developers went from three weeks to three days.',
     name: 'Martin Keller',
     role: 'CTO, FinanceFlow GmbH',
     image: 'https://randomuser.me/api/portraits/men/52.jpg',
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     quote:
-      'We had AI pilots in three departments, all running differently. Megatherium unified everything into a single workflow framework with proper governance. Our compliance team is happy, and our staff processes twice the volume with the same headcount.',
+      'We had AI pilots in three departments, all running differently. Megatherium GmbH unified everything into a single workflow framework with proper governance. Our compliance team is happy, and our staff processes twice the volume with the same headcount.',
     name: 'Thomas Weber',
     role: 'Head of Operations, DataBridge AG',
     image: 'https://randomuser.me/api/portraits/men/62.jpg',
