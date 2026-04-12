@@ -58,6 +58,12 @@ public/
 - Node.js 20+
 - npm
 
+This repo includes an `.nvmrc` file and is currently set up for Node 22. If you use `nvm`, run:
+
+```bash
+nvm use
+```
+
 ### Install
 
 ```bash

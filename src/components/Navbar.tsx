@@ -3,8 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
   { label: 'Services', href: '#services' },
+  { label: 'Work', href: '#case-studies' },
+  { label: 'Fit', href: '#client-fit' },
   { label: 'How We Work', href: '#how-we-work' },
-  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'AI Governance', href: '#ai-governance' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -38,14 +40,14 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-neutral-950/90 backdrop-blur-xl'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
+      <nav aria-label="Primary" className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-9 h-9 rounded-lg bg-primary-600 flex items-center justify-center shadow-lg shadow-primary-600/20">
@@ -81,9 +83,9 @@ export default function Navbar() {
           })}
           <a
             href="#contact"
-            className="bg-primary-600 hover:bg-primary-500 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-primary-600/20 hover:shadow-primary-500/30"
+            className="bg-primary-600 hover:bg-primary-500 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-lg shadow-primary-600/20 hover:shadow-primary-500/30 whitespace-nowrap"
           >
-            Request a Quote
+            Book a Call
           </a>
         </div>
 
@@ -103,7 +105,7 @@ export default function Navbar() {
             )}
           </svg>
         </button>
-      </div>
+      </nav>
 
       {/* Mobile menu */}
       <AnimatePresence>
@@ -115,7 +117,7 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             className="lg:hidden bg-neutral-950/95 backdrop-blur-xl border-b border-neutral-800 overflow-hidden"
           >
-            <div className="px-6 py-4 flex flex-col gap-4">
+            <div className="px-6 py-5 flex flex-col gap-3">
               {links.map((link) => (
                 <a
                   key={link.href}
@@ -126,10 +128,10 @@ export default function Navbar() {
                     const el = document.querySelector(link.href)
                     if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
                   }}
-                  className={`font-medium transition-colors ${
+                  className={`font-medium transition-colors rounded-xl px-4 py-3 border ${
                     activeSection === link.href.slice(1)
-                      ? 'text-primary-400'
-                      : 'text-neutral-300 hover:text-white'
+                      ? 'text-primary-300 border-primary-700/50 bg-primary-950/30'
+                      : 'text-neutral-300 hover:text-white border-neutral-800 bg-neutral-900/60'
                   }`}
                 >
                   {link.label}
@@ -143,14 +145,14 @@ export default function Navbar() {
                   const el = document.querySelector('#contact')
                   if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
                 }}
-                className="bg-primary-600 text-white px-5 py-2.5 rounded-lg font-semibold text-center"
+                className="mt-2 bg-primary-600 text-white px-5 py-3 rounded-xl font-semibold text-center shadow-lg shadow-primary-600/20"
               >
-                Request a Quote
+                Book a Call
               </a>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </header>
   )
 }

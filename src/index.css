@@ -72,6 +72,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  isolation: isolate;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-primary-500) 35%, transparent);
+  color: white;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,

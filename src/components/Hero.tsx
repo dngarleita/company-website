@@ -73,15 +73,15 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                className="bg-primary-600 hover:bg-primary-500 text-white px-7 py-3.5 rounded-lg font-semibold transition-all shadow-lg shadow-primary-600/25 hover:shadow-primary-500/30 hover:-translate-y-0.5"
+                className="bg-primary-600 hover:bg-primary-500 text-white px-7 py-3.5 rounded-lg font-semibold transition-all shadow-lg shadow-primary-600/25 hover:shadow-primary-500/30 hover:-translate-y-0.5 whitespace-nowrap"
               >
-                Request a Quote
+                Discuss Your Project
               </a>
               <a
-                href="#services"
-                className="text-neutral-400 hover:text-white px-7 py-3.5 rounded-lg font-semibold transition-colors flex items-center gap-2"
+                href="#case-studies"
+                className="text-neutral-300 hover:text-white px-2 py-3.5 rounded-lg font-semibold transition-colors flex items-center gap-2"
               >
-                See how we work
+                See selected work
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -163,7 +163,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-[float-down_2s_ease-in-out_infinite]">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-[float-down_2s_ease-in-out_infinite]" aria-hidden="true">
         <svg className="w-5 h-5 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
